@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 只匹配father类下的第一层li标签 */
+.box > li {
+  color: red;
+}
+    </style>
+</head>
+<body>
+    <div class="father">
+        我是父元素
+        <li>我是li,是第一个子元素</li>
+        <p>我是p,是第二个子元素</p>
+        <li>我是li,是第三个子元素</li>
+        <li>我是li,是第四个子元素</li>
+            <div class="son">
+                我是div,是第五个子元素
+                <li>我是li,是第六个子元素,也可以叫我"孙"元素</li>
+            </div>
+    </div>
+</body>
+</html>
